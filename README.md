@@ -1,1 +1,1 @@
-# curriculum-vitae
+<img src="src/assets/cv.png">

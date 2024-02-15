@@ -1,0 +1,31 @@
+<template>
+  <v-app>
+    <v-main>
+      <div class="d-flex h-100 ga-2">
+        <IntroCard style="min-width: 375px"></IntroCard>
+        <div class="d-flex flex-column ga-2">
+          <Experience></Experience>
+          <v-card class="ma-2">
+            <v-card-title class="text-h5">Language Proficiency</v-card-title>
+            <div class="d-flex align-center justify-space-between language-bar">
+              <div>German (Native Speaker)</div>
+              <div>English</div>
+            </div>
+          </v-card>
+        </div>
+      </div>
+    </v-main>
+  </v-app>
+</template>
+
+<script setup lang="ts">
+</script>
+
+<style lang="scss">
+.language-bar{
+  height: 3rem;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  width: 100%;
+  background: linear-gradient(149deg, rgba(241,64,37,1) 0%, rgba(241,64,37,1) 57%,rgba(8,40,142,1) 60%, rgba(0,212,255,1) 100%);}
+</style>

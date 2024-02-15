@@ -1,0 +1,100 @@
+<template>
+  <v-card max-width="374" class="h-100">
+    <div class="d-flex justify-center align-center">
+      <div style="width: 300px; height: 300px">
+        <v-img
+          height="300"
+          width="300"
+          src="~@/assets/me.jpg"
+          cover
+          style="filter: grayscale(1); border-radius: 50%"
+        ></v-img>
+      </div>
+    </div>
+    <v-card-title class="text-h4">Fabian Ahammer</v-card-title>
+    <div class="divider"></div>
+    <div class="information-scaffold">
+    <v-card-subtitle>
+      <div clasS="d-flex justify-space-between align-center">
+      <div class="icon-base bg-indigo">
+        <v-icon
+          icon="mdi-cake"
+          class="ma-2"
+          color="white"
+        ></v-icon>
+      </div>
+        <span class="text-h5">13. February 2000</span>
+      </div>
+    </v-card-subtitle>
+    <v-card-subtitle>
+      <div clasS="d-flex justify-space-between align-center">
+        <div class="icon-base bg-red-accent-3">
+          <v-icon
+            icon="mdi-mail"
+            class="ma-2"
+            color="white"
+          ></v-icon>
+        </div>
+        <a href="mailto:faa.ahammer@gmail.com" class="text-h5">faa.ahammer@gmail.com</a>
+      </div>
+    </v-card-subtitle>
+    <v-card-subtitle>
+      <div clasS="d-flex justify-space-between align-center">
+        <div class="icon-base bg-black">
+          <v-icon
+            icon="mdi-github"
+            class="ma-2"
+            color="white"
+          ></v-icon>
+        </div>
+        <a href="https://github.com/FabianAhammer" class="text-h5">FabianAhammer</a>
+      </div>
+    </v-card-subtitle>
+    <v-card-subtitle>
+      <div clasS="d-flex justify-space-between align-center">
+        <div class="icon-base bg-blue-accent-2">
+          <v-icon
+            icon="mdi-linkedin"
+            class="ma-2"
+            color="white"
+          ></v-icon>
+        </div>
+        <a href="https://at.linkedin.com/in/fabian-ahammer-b71581204" class="text-h5">Fabian Ahammer</a>
+      </div>
+    </v-card-subtitle>
+    </div>
+    <div class="divider"></div>
+    <SkillChart></SkillChart>
+  </v-card>
+</template>
+
+<script lang="ts">
+//
+</script>
+
+<style lang="scss">
+.icon-base {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.information-scaffold{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+
+  > .v-card-subtitle{
+    background: rgba(63, 62, 62, 0.71);
+  }
+
+
+}
+.divider{
+  border-bottom: 2px solid grey;
+  margin: 2rem 0;
+}
+</style>
