@@ -4,7 +4,7 @@ import 'charts.css';
 </script>
 
 <template>
-  <div class="text-h5 pl-4">
+  <div class="text-xxl-h5  text-lg-h6 pl-4">
     Technologies:
   </div>
   <div id="my-chart">
@@ -39,8 +39,15 @@ import 'charts.css';
 </template>
 
 <style scoped lang="scss">
+
   .legend{
     outline: transparent;
     border: none;
+  }
+
+  @media screen and (max-width: 1920px){
+    .legend li{
+      font-size: .75rem;
+    }
   }
 </style>
