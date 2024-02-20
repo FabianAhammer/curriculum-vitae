@@ -1,4 +1,4 @@
-name: Build and Deploy MKJ MASTER
+name: Build and Deploy GH Pages
 
 on:
     push:
