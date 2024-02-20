@@ -1,5 +1,5 @@
-<script lang="ts">
-import 'charts.css';
+<script setup lang="ts">
+import * as chart from 'charts.css';
 
 </script>
 

@@ -1,1 +1,1 @@
-<img src="src/assets/cv.png">
+<img src="public/cv.png">

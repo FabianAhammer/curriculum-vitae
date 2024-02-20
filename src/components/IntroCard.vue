@@ -5,7 +5,7 @@
         <v-img
           height="300"
           width="300"
-          src="~@/assets/me.jpg"
+          src="~@/../public/me.jpg"
           cover
           style="filter: grayscale(1); border-radius: 50%"
         ></v-img>
@@ -68,8 +68,7 @@
   </v-card>
 </template>
 
-<script lang="ts">
-//
+<script setup lang="ts">
 </script>
 
 <style lang="scss">

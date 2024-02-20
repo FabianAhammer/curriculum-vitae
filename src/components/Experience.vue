@@ -4,7 +4,7 @@ export default {
     timelineentries: [
       {
         color: 'cyan',
-        img: '/src/assets/skylinx.png',
+        img: new URL(`@/../skylinx.png`, import.meta.url).href,
         year: '01.2021 - 04.2024',
         company: 'Skylinx GmbH',
         text: `
@@ -13,28 +13,28 @@ export default {
       },
       {
         color: 'red',
-        img: '/src/assets/oebh.png',
+        img: new URL(`@/../public/oebh.png`, import.meta.url).href,
         year: '07.2020 - 01.2021',
         company: 'Austrian Armed Forces',
         text: `Fulfillment of the duty to serve as an Austrian male citizen. Worked in the mountain-moving division of Salzburg`
       },
       {
         color: 'pink',
-        img: '/src/assets/bwt.png',
+        img: new URL(`@/../public/bwt.png`, import.meta.url).href,
         year: '08.2017',
         company: 'Internship BWT Mondsee',
         text: `Worked as an IT Intern for one month, primarily in Web Development`
       },
       {
         color: 'amber',
-        img: '/src/assets/muki.png',
+        img: new URL(`@/../public/assets/muki.png`, import.meta.url).href,
         year: '08.2015',
         company: 'Internship Muki Ebensee',
         text: `Internship at a local retailer as sales assistant`
       },
       {
         color: 'green',
-        img: '/src/assets/leonding.png',
+        img: new URL(`@/../public/leonding.png`, import.meta.url).href,
         year: '09.2014 - 07.2021',
         company: 'HTBLA Leonding',
         text: `Graduated the "Informatics" Branch of the Higher Technical College in Leonding `
