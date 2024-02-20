@@ -4,7 +4,7 @@ export default {
     timelineentries: [
       {
         color: 'cyan',
-        img: new URL(`@/../skylinx.png`, import.meta.url).href,
+        img: new URL(`@/../public/skylinx.png`, import.meta.url).href,
         year: '01.2021 - 04.2024',
         company: 'Skylinx GmbH',
         text: `
@@ -27,7 +27,7 @@ export default {
       },
       {
         color: 'amber',
-        img: new URL(`@/../public/assets/muki.png`, import.meta.url).href,
+        img: new URL(`@/../public/muki.png`, import.meta.url).href,
         year: '08.2015',
         company: 'Internship Muki Ebensee',
         text: `Internship at a local retailer as sales assistant`
