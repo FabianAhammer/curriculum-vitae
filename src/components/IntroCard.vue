@@ -1,7 +1,7 @@
 <template>
-  <v-card max-width="374" class="h-100">
+  <v-card  class="h-100 max-width-card">
     <div class="d-flex justify-center align-center">
-      <div style="width: 300px; height: 300px">
+      <div class="scaling-image">
         <v-img
           height="300"
           width="300"
@@ -11,7 +11,7 @@
         ></v-img>
       </div>
     </div>
-    <v-card-title class="text-h4">Fabian Ahammer</v-card-title>
+    <v-card-title class="text-xl-h4 text-lg-h5">Fabian Ahammer</v-card-title>
     <div class="divider"></div>
     <div class="information-scaffold">
     <v-card-subtitle>
@@ -23,7 +23,7 @@
           color="white"
         ></v-icon>
       </div>
-        <span class="text-h5">13. February 2000</span>
+        <span class="text-xl-h5">13. February 2000</span>
       </div>
     </v-card-subtitle>
     <v-card-subtitle>
@@ -35,7 +35,7 @@
             color="white"
           ></v-icon>
         </div>
-        <a href="mailto:faa.ahammer@gmail.com" class="text-h5">faa.ahammer@gmail.com</a>
+        <a href="mailto:faa.ahammer@gmail.com" class="text-xl-h5">faa.ahammer@gmail.com</a>
       </div>
     </v-card-subtitle>
     <v-card-subtitle>
@@ -47,7 +47,7 @@
             color="white"
           ></v-icon>
         </div>
-        <a href="https://github.com/FabianAhammer" class="text-h5">FabianAhammer</a>
+        <a href="https://github.com/FabianAhammer" class="text-xl-h5">FabianAhammer</a>
       </div>
     </v-card-subtitle>
     <v-card-subtitle>
@@ -59,7 +59,7 @@
             color="white"
           ></v-icon>
         </div>
-        <a href="https://at.linkedin.com/in/fabian-ahammer-b71581204" class="text-h5">Fabian Ahammer</a>
+        <a href="https://at.linkedin.com/in/fabian-ahammer-b71581204" class="text-xl-h5">Fabian Ahammer</a>
       </div>
     </v-card-subtitle>
     </div>
@@ -96,4 +96,32 @@
   border-bottom: 2px solid grey;
   margin: 2rem 0;
 }
+
+.scaling-image{
+  width: 300px;
+  height: 300px
+}
+
+.max-width-card{
+  max-width: 374px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .scaling-image{
+    width: 200px;
+    height: 200px
+  }
+  .divider {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .max-width-card{
+    max-width: 500px;
+  }
+}
+
+
 </style>

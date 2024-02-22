@@ -4,7 +4,7 @@ import * as chart from 'charts.css';
 </script>
 
 <template>
-  <div class="text-xxl-h5  text-lg-h6 pl-4">
+  <div class="text-xxl-h5  pl-4">
     Technologies:
   </div>
   <div id="my-chart">
@@ -48,6 +48,13 @@ import * as chart from 'charts.css';
   @media screen and (max-width: 1920px){
     .legend li{
       font-size: .75rem;
+    }
+  }
+
+
+  @media screen and (max-width: 1600px){
+    .legend li{
+      font-size: .6rem;
     }
   }
 </style>

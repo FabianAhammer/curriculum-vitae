@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-main>
-      <div class="d-flex main-spacer ga-2">
+      <div class="d-flex main-spacer flex-md-row flex-lg-row flex-xl-row flex-column ga-xl-2">
         <IntroCard class="card-flex"></IntroCard>
-        <div class="d-flex flex-column ga-2">
+        <div class="d-flex flex-column ga-lg-2 ga-xl-2 ga-1">
           <Experience></Experience>
           <v-card class="ma-2">
             <v-card-title class="text-h5">Language Proficiency</v-card-title>
@@ -42,4 +42,12 @@
     min-width: 250px;
   }
 }
+
+
+@media screen and (max-width: 500px)  {
+  .main-spacer{
+    height: auto;
+  }
+}
+
 </style>

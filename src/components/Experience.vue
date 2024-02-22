@@ -45,7 +45,7 @@ export default {
 </script>
 
 <template>
-  <v-card class="pa-2 flex-1-0">
+  <v-card class="pa-2 flex-1-0 card-align-max-width">
     <v-timeline align="start">
       <v-timeline-item
         v-for="(entry, i) in timelineentries"
@@ -76,5 +76,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
+.card-align-max-width{
+  max-width: 100%;
+}
 </style>
