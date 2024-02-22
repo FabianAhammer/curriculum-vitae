@@ -1,0 +1,38 @@
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" opacity="0.08">
+    <defs>
+        <linearGradient id="Gradient1">
+            <stop class="stop1" offset="0%" stop-color="grey">
+                <animate attributeName="stop-color" values="grey,black,grey" repeatCount="indefinite" dur="10s"/>
+            </stop>
+            <stop class="stop2" offset="30%" stop-color="black">
+                <animate attributeName="stop-color" values="black,grey,black" repeatCount="indefinite" dur="10s"/>
+            </stop>
+            <stop class="stop3" offset="70%" stop-color="black">
+                <animate attributeName="stop-color" values="black,grey,black" repeatCount="indefinite" dur="10s"/>
+            </stop>
+            <stop class="stop4" offset="100%" stop-color="grey">
+                <animate attributeName="stop-color" values="grey,black,grey" repeatCount="indefinite" dur="10s"/>
+            </stop>
+        </linearGradient>
+    </defs>
+
+    <style>
+        .background_tile_inner_overflow{
+        fill: rgb(33,33,33)
+        }
+
+        .background_tile_fill {
+        fill: url(#Gradient1);
+        }
+    </style>
+
+    <polygon
+            class="background_tile_fill"
+            points="30,0 70,0 100,30 100,70, 70,100 30,100 0,70 0,30 30,0"
+            fill="red"
+    />
+    <polygon
+            class="background_tile_inner_overflow"
+            points="35,10 65,10 90,35 90,65, 65,90 35,90 10,65 10,35 35,10"
+    />
+</svg>
