@@ -41,12 +41,19 @@
   .card-flex{
     min-width: 250px;
   }
+  .language-bar{
+    font-size: 1.2rem;
+  }
 }
 
 
 @media screen and (max-width: 500px)  {
   .main-spacer{
     height: auto;
+  }
+
+  .language-bar{
+    font-size: 1rem;
   }
 }
 
