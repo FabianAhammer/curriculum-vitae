@@ -13,14 +13,14 @@ export default {
       },
       {
         color: 'red',
-        img: new URL(`@/../public/oebh.png`, import.meta.url).href,
+        img: new URL(`@/../public/oebh.svg`, import.meta.url).href,
         year: '07.2020 - 01.2021',
         company: 'Austrian Armed Forces',
         text: `Fulfillment of the duty to serve as an Austrian male citizen. Worked in the mountain-moving division of Salzburg`
       },
       {
         color: 'pink',
-        img: new URL(`@/../public/bwt.png`, import.meta.url).href,
+        img: new URL(`@/../public/bwt.svg`, import.meta.url).href,
         year: '08.2017',
         company: 'Internship BWT Mondsee',
         text: `Worked as an IT Intern for one month, primarily in Web Development`
@@ -60,7 +60,9 @@ export default {
           ></div>
         </template>
         <template v-if="entry.img != null" v-slot:icon>
-          <v-avatar size="small" :image="entry.img"></v-avatar>
+          <div class="contain_image">
+            <v-avatar density="comfortable"  :image="entry.img"></v-avatar>
+          </div>
         </template>
         <div>
           <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${entry.color}`">
@@ -75,8 +77,13 @@ export default {
   </v-card>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 .card-align-max-width{
   max-width: 100%;
+}
+
+.contain_image .v-img__img {
+  object-fit: contain !important;
+  padding: 0.2rem;
 }
 </style>
