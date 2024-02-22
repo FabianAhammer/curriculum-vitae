@@ -5,8 +5,8 @@ on:
     branches:
       - main
 jobs:
-  web-deploy:
-    name: 🚀 Deploy Website
+  build:
+    name: 🚀 Build Website
     runs-on: ubuntu-latest
     permissions:
       id-token: write
