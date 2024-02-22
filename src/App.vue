@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <v-main>
-      <div class="d-flex main-spacer flex-md-row flex-lg-row flex-xl-row flex-column ga-xl-2">
+      <div class="d-flex main-spacer flex-md-row flex-lg-row flex-xl-row flex-column ga-lg-1 ga-xxl-2">
         <IntroCard class="card-flex"></IntroCard>
-        <div class="d-flex flex-column ga-lg-2 ga-xl-2 ga-1">
+        <div class="d-flex flex-column ga-lg-1 ga-xxl-2 ga-1">
           <Experience></Experience>
-          <v-card class="ma-2">
+          <v-card class="mr-lg-2 mb-lg-2">
             <v-card-title class="text-h5">Language Proficiency</v-card-title>
             <div class="d-flex align-center justify-space-between language-bar">
               <div>German (Native Speaker)</div>
@@ -36,7 +36,14 @@
 .card-flex{
   min-width: 375px;
 }
-
+@media screen and (max-width: 2032px)  {
+  .card-flex{
+    min-width: 250px;
+  }
+  .language-bar{
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 1920px)  {
   .card-flex{
     min-width: 250px;
@@ -45,6 +52,17 @@
     font-size: 1.2rem;
   }
 }
+
+@media screen and (max-width: 1600px)  {
+  .card-flex{
+    min-width: 250px;
+  }
+  .language-bar{
+    font-size: 1rem;
+  }
+}
+
+
 
 
 @media screen and (max-width: 500px)  {
